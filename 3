@@ -1,1 +1,10 @@
-
+#include<locale.h>
+#include<stdio.h>
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	int L = 7333, N = 4, M = 1, K = 3;
+	int res1 = N / L;
+	int res2 = N % L;
+	printf("Дано:\n\t\t %d\n\t\t%d \n--------------- \n Ответ: \n\t +%1.1d,%3.3d", N, L, res1, res2);
+}
